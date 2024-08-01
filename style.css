@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Makes background image stationary */
-    height: 100%;
+    overflow: hidden;
 }
 
 header {
