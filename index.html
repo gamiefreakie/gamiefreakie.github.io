@@ -1,64 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>gamiefreakie subathon</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-container">
-<!--                 <iframe src="https://widgets.streamelements.com/host/619bbf2ae6207f87e620fb45/e3acfb95-fdb2-4c60-b23d-c5e7757d3e52/T0sLftI7lZKkbWd9WozKSMLvyx98VMDGtdTbtxjtlMWNZuRK" 
-                        width="18%" height="175" frameborder="0" allowfullscreen></iframe> -->
-                <h2>Happy hour: 4am-5am CEST</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>GamieFreakie's Donation Goals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: #f2f2f2;
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffee;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            color: #ffaaff;
+        }
+
+        .goal {
+            margin: 1rem 0;
+            padding: 0.75rem;
+            border-left: 4px solid #00ffee;
+            background-color: #1a1a1a;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        .socials .left, .socials .right {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #222;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .socials a:hover {
+            background-color: #333;
+        }
+
+        .socials i {
+            margin-right: 8px;
+        }
+
+        .note {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Donation Goals</h1>
+
+    <p class="note">100 bits = $1 · 1 sub = $2.50</p>
+    <p class="note">All donation goals are decided by the community and more may be added during the stream.</p>
+
+    <h2>Individual Goals</h2>
+
+    <div class="goal"><strong>$5 — Choose a Charm:</strong> Must equip whatever charm donator decides.</div>
+    <div class="goal"><strong>$10 — Inverted Controls (10 minutes):</strong> Play with movement and controls flipped.</div>
+    <div class="goal"><strong>$25 — Femboy Socks Cam:</strong> Sock cam goes live.</div>
+    <div class="goal"><strong>$30 — Drop All Geo:</strong> I must die and drop all current Geo on the ground (does not apply in bosses or challenge paths).</div>
+    <div class="goal"><strong>$50 — Blind Boss Fight (max 1 hour):</strong> Attempt a boss fight with half of my screen covered.</div>
+
+    <h2>Cumulative Milestones</h2>
+
+    <div class="goal"><strong>$50 — Recite Some Shakespeare:</strong> Dramatic line or short scene, full theatrical flair.</div>
+    <div class="goal"><strong>$100 — Sing a Song (live):</strong> Chat picks it. I sing it. No shame.</div>
+    <div class="goal"><strong>$150 — YouTube Video of the Stream:</strong> A full edit/highlight will be made and uploaded.</div>
+    <div class="goal"><strong>$250 — Steel Soul Run UNLOCKED:</strong> After 112% base run, I do a Steel Soul run.</div>
+    <div class="goal"><strong>$300 — Admit to Being Cute:</strong> I will accept being called cute for one day (still not true tho).</div>
+    <div class="goal"><strong>$400 — IRL Cam for One Day:</strong> I’ll use a real-life cam for an entire stream day. <em>(If the stream ends, too bad!)</em></div>
+    <div class="goal"><strong>$500 — Femboy Outfit ON STREAM:</strong> I'll wear an outfit live.</div>
+
+    <div class="socials" id="socials">
+        <div class="left">
+            <div class="discord">
+                <a href="https://discord.gg/vWqzvM7wNw" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
             </div>
-        </header>
-        <main>
-            <div class="socials" id="socials">
-                <div class="left">
-                    <div class="discord">
-                        <a href="https://discord.gg/vWqzvM7wNw" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-discord"></i> Discord
-                        </a>
-                    </div>
-                    <div class="tiktok">
-                        <a href="https://www.tiktok.com/@gamiefreakie" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-tiktok"></i> TikTok
-                        </a>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="twitch">
-                        <a href="https://www.twitch.tv/gamiefreakie" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-twitch"></i> Twitch
-                        </a>
-                    </div>
-                    <div class="youtube">
-                        <a href="https://www.youtube.com/channel/UC3Omdifr5eC4gz5h-Li_rCQ" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-youtube"></i> YouTube
-                        </a>
-                    </div>
-                </div>
+            <div class="tiktok">
+                <a href="https://www.tiktok.com/@gamiefreakie" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
             </div>
-    
-            <section id="info">
-                <div class="info-content">
-                    <div class="info-item">
-                        <h3>Subathon Timer increase</h3>
-                        <p><strong>Tier 1 sub:</strong> 10 min</p>
-                        <p><strong>Tier 2 sub:</strong> 20 min</p>
-                        <p><strong>Tier 3 sub:</strong> 50 min</p>
-                        <p><strong>100 bits:</strong> 2 min</p>
-                        <p><strong>1 USD donation:</strong> 4 min</p>
-                        <p><strong>Follow:</strong> 1 min</p>
-                        <p><strong>Raider:</strong> 1 min per person (over 5 people)</p>
-                        <p><strong>Each level of hype train:</strong> 15 min</p>
-                        <p><strong>Happy hour:</strong> doubles all time gain</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+        </div>
+        <div class="right">
+            <div class="twitch">
+                <a href="https://www.twitch.tv/gamiefreakie" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitch"></i> Twitch
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/channel/UC3Omdifr5eC4gz5h-Li_rCQ" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
