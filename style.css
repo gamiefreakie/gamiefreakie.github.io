@@ -1,0 +1,152 @@
+body {
+    background:
+        radial-gradient(circle at top, rgba(24, 233, 198, 0.164), transparent 40%),
+        #0b0b0b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(0, 255, 213, 0.25);
+}
+
+/* GRID */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+/* HERO CARD */
+.hero {
+    position: relative;
+    height: 360px; /* BIGGER */
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* HERO IMAGE */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps portraits clean */
+    display: block;
+}
+
+/* HERO NAME (FIXED + VISIBLE) */
+.hero-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 6px;
+    font-size: 15px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0)
+    );
+    color: #fff;
+    z-index: 3; /* ABOVE IMAGE */
+    text-align: center;
+    pointer-events: none;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.3px;
+}
+
+/* CURRENT HERO */
+.hero.current {
+    outline: 4px solid #00ffd5;
+    box-shadow: 0 0 18px #00ffd5;
+    background: #00ffd5;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 6px;
+    z-index: 4;
+}
+
+.hero.done img {
+    filter: grayscale(100%) brightness(0.65);
+}
+
+
+/* DONE HERO RED CROSS (FIXED) */
+.hero.done::after {
+    content: "✖";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.75);
+    z-index: 2; /* ABOVE IMAGE, BELOW NAME */
+    pointer-events: none;
+    text-shadow: 0 0 18px rgba(255, 0, 0, 0.8);
+}
+
+/* OPTIONAL: fade TODO heroes slightly */
+.hero.todo {
+    opacity: 0.85;
+}
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: #151515;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.socials .left,
+.socials .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discord a { border-left: 4px solid #5865F2; }
+.tiktok a { border-left: 4px solid #69C9D0; }
+.twitch a { border-left: 4px solid #9146FF; }
+.youtube a { border-left: 4px solid #FF0000; }
