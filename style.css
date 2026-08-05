@@ -9,6 +9,7 @@ body {
     padding: 20px;
 }
 
+
 header {
     background-color: #333333;
     color: white;
@@ -23,18 +24,41 @@ header {
     text-align: center;
 }
 
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(0, 255, 213, 0.25);
+    text-align: center;
+    color: #00ffee;
+}
+
+h2 {
+    margin-top: 2rem;
+    color: #ffaaff;
+}
+
 iframe {
     margin: 0 auto;
     display: block;
 }
 
-header h2 {
-    margin: 0;
+main {
     padding: 20px;
 }
 
-main {
-    padding: 20px;
+.goal {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-left: 4px solid #00ffee;
+    background-color: #1a1a1a;
+}
+
+.completed {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-left: 4px solid #00FF00;
+    background-color: #1a1a1a;
 }
 
 /* SOCIALS */
