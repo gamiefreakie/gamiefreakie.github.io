@@ -37,41 +37,49 @@ main {
     padding: 20px;
 }
 
+/* SOCIALS */
 .socials {
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px; /* Reduces the gap between items */
-    padding: 30px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
-
-.left, .right {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Reduces space between social icons */
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .socials a {
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
+    font-size: 18px;
     display: flex;
     align-items: center;
-    font-size: 45px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adds a slight shadow effect */
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.socials a i {
-    margin-right: 8px;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: #151515;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .socials a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-    transform: scale(1.05); /* Slightly enlarge icon on hover */
     text-decoration: underline;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
 }
+
+.socials .left,
+.socials .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discord a { border-left: 4px solid #5865F2; }
+.tiktok a { border-left: 4px solid #69C9D0; }
+.twitch a { border-left: 4px solid #9146FF; }
+.youtube a { border-left: 4px solid #FF0000; }
 
 section {
     margin-bottom: 20px;
