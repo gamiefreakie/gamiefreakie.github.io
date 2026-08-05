@@ -1,12 +1,12 @@
 body {
+    background:
+        radial-gradient(circle at top, rgba(24, 233, 198, 0.164), transparent 40%),
+        #0b0b0b;
+    color: #fff;
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
-    padding: 0;
-    background-image: url('https://cdn.discordapp.com/attachments/1121930362642239488/1268627882209574952/852780023-uwp1954149.png?ex=66ad1d49&is=66abcbc9&hm=aed94cfd13168f7bdfd3e949e3277c89172763cca75b71b40b2d80df74edca85&');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; /* Makes background image stationary */
-    overflow: hidden;
+    padding: 20px;
 }
 
 header {
