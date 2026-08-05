@@ -9,21 +9,6 @@ body {
     padding: 20px;
 }
 
-
-header {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
-}
-
-.header-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
 h1 {
     margin-bottom: 30px;
     font-size: 2.5rem;
@@ -36,11 +21,6 @@ h1 {
 h2 {
     margin-top: 2rem;
     color: #ffaaff;
-}
-
-iframe {
-    margin: 0 auto;
-    display: block;
 }
 
 main {
