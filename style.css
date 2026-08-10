@@ -27,6 +27,33 @@ main {
     padding: 20px;
 }
 
+.note {
+    margin: 8px auto;
+    padding: 8px 14px;
+    max-width: 800px;
+
+    background: rgba(0, 255, 240, 0.05);
+    border-left: 3px solid #00fff0;
+    border-radius: 3px;
+
+    color: #d5dddd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.notes {
+    max-width: 800px;
+    margin: 10px auto 30px;
+    padding: 8px 14px;
+
+    background: rgba(0, 255, 240, 0.04);
+    border-left: 3px solid #00fff0;
+    border-radius: 4px;
+
+    box-shadow: 0 0 15px rgba(0, 255, 240, 0.05);
+}
+
+
 .goal {
     margin: 1rem 0;
     padding: 0.75rem;
